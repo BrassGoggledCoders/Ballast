@@ -38,7 +38,7 @@ repositories {
     mavenCentral()
     maven {
         name "BASE"
-        url "https://modmaven.k-4u.nl/"
+        url "https://maven.teamacronymcoders.com/"
     }
     maven {
         name 'Tinkers'
