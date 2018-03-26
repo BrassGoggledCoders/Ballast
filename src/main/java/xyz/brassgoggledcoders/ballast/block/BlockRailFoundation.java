@@ -5,6 +5,7 @@ import com.teamacronymcoders.base.blocks.IAmBlock;
 import com.teamacronymcoders.base.blocks.IHasItemBlock;
 import com.teamacronymcoders.base.client.models.IHasModel;
 import com.teamacronymcoders.base.items.itemblocks.ItemBlockGeneric;
+import com.teamacronymcoders.base.items.itemblocks.ItemBlockModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRailBase;
 import net.minecraft.block.properties.IProperty;
@@ -23,7 +24,7 @@ public abstract class BlockRailFoundation extends BlockRailBase implements IHasI
 
     protected BlockRailFoundation(String name) {
         super(false);
-        this.itemBlock = new ItemBlockGeneric<>(this);
+        this.itemBlock = new ItemBlockModel<>(this);
         this.name = name;
         this.setUnlocalizedName(name);
     }

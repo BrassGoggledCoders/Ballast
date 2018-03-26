@@ -1,12 +1,14 @@
 package xyz.brassgoggledcoders.ballast;
 
 import com.teamacronymcoders.base.BaseModFoundation;
+import com.teamacronymcoders.base.registrysystem.BlockRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import xyz.brassgoggledcoders.ballast.block.BlockRailDiamondCrossing;
 
 @Mod(
         modid = Ballast.MOD_ID,
@@ -36,6 +38,12 @@ public class Ballast extends BaseModFoundation<Ballast> {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         super.init(event);
+    }
+
+    @Override
+    public void registerBlocks(BlockRegistry registry) {
+        super.registerBlocks(registry);
+        registry.register(new BlockRailDiamondCrossing());
     }
 
     @Override
