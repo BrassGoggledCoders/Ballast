@@ -22,7 +22,7 @@ public abstract class BlockRailFoundation extends BlockRailBase implements IHasI
     private ItemBlock itemBlock;
     private String name;
 
-    protected BlockRailFoundation(String name) {
+    public BlockRailFoundation(String name) {
         super(false);
         this.itemBlock = new ItemBlockModel<>(this);
         this.name = name;

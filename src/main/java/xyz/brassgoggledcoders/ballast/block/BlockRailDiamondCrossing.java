@@ -1,7 +1,6 @@
 package xyz.brassgoggledcoders.ballast.block;
 
 import com.teamacronymcoders.base.blocks.IHasBlockStateMapper;
-import net.minecraft.block.BlockRailBase;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
@@ -16,7 +15,7 @@ import javax.annotation.Nullable;
 
 public class BlockRailDiamondCrossing extends BlockRailFoundation implements IHasBlockStateMapper {
     public static final PropertyEnum<EnumRailDirection> SHAPE =
-            PropertyEnum.create("shape", BlockRailBase.EnumRailDirection.class, RailPredicates.FLAT_STRAIGHT);
+            PropertyEnum.create("shape", EnumRailDirection.class, RailPredicates.FLAT_STRAIGHT::test);
 
     public BlockRailDiamondCrossing() {
         super("diamond_crossing");

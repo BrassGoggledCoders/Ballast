@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 public class BlockRailHolding extends BlockRailFoundation implements IHasBlockStateMapper {
     public static final PropertyBool NORTH_WEST = PropertyBool.create("north_west");
     public static final PropertyEnum<EnumRailDirection> SHAPE = PropertyEnum.create("shape", EnumRailDirection.class,
-            RailPredicates.FLAT_STRAIGHT);
+            RailPredicates.FLAT_STRAIGHT::test);
     public static final PropertyBool POWERED = PropertyBool.create("powered");
 
     public BlockRailHolding() {

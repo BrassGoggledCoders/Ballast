@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import xyz.brassgoggledcoders.ballast.block.BlockRailDiamondCrossing;
 import xyz.brassgoggledcoders.ballast.block.BlockRailHolding;
+import xyz.brassgoggledcoders.ballast.block.BlockRailWye;
 
 @Mod(
         modid = Ballast.MOD_ID,
@@ -46,6 +47,7 @@ public class Ballast extends BaseModFoundation<Ballast> {
         super.registerBlocks(registry);
         registry.register(new BlockRailDiamondCrossing());
         registry.register(new BlockRailHolding());
+        registry.register(new BlockRailWye());
     }
 
     @Override
