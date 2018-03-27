@@ -10,39 +10,39 @@
   "variants": {
     "normal": [{}],
     "inventory": [{}],
-    "facing=north,powered=true": {
+    "facing=north,powered=true": [{
       "textures" : {
         "rail": "ballast:blocks/holding_powered"
       }
-    },
-    "facing=east,powered=true": {
+    }],
+    "facing=east,powered=true": [{
       "textures" : {
         "rail": "ballast:blocks/holding_powered"
       },
       "y": 90
-    },
-    "facing=south,powered=true": {
+    }],
+    "facing=south,powered=true": [{
       "textures" : {
         "rail": "ballast:blocks/holding_powered"
       },
       "y": 180
-    },
-    "facing=west,powered=true": {
+    }],
+    "facing=west,powered=true": [{
       "textures" : {
         "rail": "ballast:blocks/holding_powered"
       },
       "y": 270
-    },
-    "facing=north,powered=false": {
-    },
-    "facing=east,powered=false": {
+    }],
+    "facing=north,powered=false": [{
+    }],
+    "facing=east,powered=false": [{
       "y": 90
-    },
-    "facing=south,powered=false": {
+    }],
+    "facing=south,powered=false": [{
       "y": 180
-    },
-    "facing=west,powered=false": {
+    }],
+    "facing=west,powered=false": [{
       "y": 270
-    }
+    }]
   }
 }
